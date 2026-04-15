@@ -1,0 +1,113 @@
+/* DECLARACIÓN DE USO DE IA - PRÁCTICA 10
+   Esta hoja de estilos es una versión corregida que fusiona la estética editorial 
+   anterior con reglas de tamaño estandarizadas para las imágenes, logrando un 
+   equilibrio visual en toda la página.
+   
+   CONCLUSIONES DEL ANÁLISIS:
+   1. Estética: Se mantiene la elegancia con bordes dobles y tipografía Georgia, 
+      pero con un diseño más compacto.
+   2. Legibilidad: Se redujo el espaciado excesivo para mejorar la fluidez de lectura.
+   3. Organización: Se aplicaron reglas específicas (`width: 300px; height: auto`) 
+      para estandarizar todas las imágenes, resolviendo el problema de tamaños desiguales.
+*/
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    line-height: 1.7; /* Ligeramente reducido para mayor fluidez */
+    margin: 0;
+    padding: 30px; /* Reducido para mejor control */
+    text-align: justify;
+}
+
+/* Títulos con Impacto pero Proporcionales */
+h1 {
+    color: #df0000;
+    font-size: 3.2em; /* Ligeramente reducido para que no sea gigante */
+    text-align: center;
+    border-bottom: 4px double #f9d71c;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #f9d71c;
+    font-size: 2em;
+    border-left: 6px solid #df0000;
+    padding-left: 15px;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+h3 {
+    color: #df0000;
+    font-size: 1.6em;
+    margin-top: 25px;
+    border-bottom: 1px solid #333;
+    text-align: center; /* Títulos de personajes centrados */
+}
+
+/* Navegación Estilo Botones Premium */
+nav {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: #f9d71c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    margin: 0 4px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #df0000;
+    color: #ffffff;
+    border-color: #f9d71c;
+}
+
+/* Reglas Estándar para TODAS las Imágenes (Corrección) */
+img {
+    display: block;
+    margin: 30px auto; /* Centradas con aire arriba/abajo */
+    border: 4px solid #1a1a1a;
+    box-shadow: 0 8px 15px rgba(223, 0, 0, 0.15); /* Sombra roja sutil */
+    
+    /* TAMAÑO ESTÁNDAR Y FIJO */
+    width: 300px;        /* Ancho fijo para todas */
+    height: auto;        /* Mantiene la proporción original */
+    max-width: 100%;     /* Seguridad para móviles */
+    
+    filter: grayscale(15%); /* Efecto visual sutil */
+}
+
+/* Contenedores de Personajes para darles aire */
+.personaje-luffy, .personaje {
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+/* Listas y detalles */
+ul {
+    list-style-type: square;
+    color: #f9d71c;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 8px;
+}
+
+strong {
+    color: #f9d71c;
+    font-size: 1.15em;
+}

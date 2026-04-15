@@ -1,0 +1,19 @@
+/* Configuración de colores de One Piece */
+body {
+    background-color: #000000; /* negro */
+    color: #ffffff;           /* blanco para el texto */
+    font-family: Georgia, serif;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #df0000;           /* Rojo intenso */
+    text-transform: uppercase;
+}
+
+a {
+    color: #f9d71c;           /* Amarillo */
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #000000; /* Fondo negro para que resalte el amarillo */
+}
