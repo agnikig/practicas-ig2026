@@ -1,0 +1,130 @@
+/* DECLARACIÓN DE USO DE IA: 
+   Para la Práctica 12, se utilizó IA para optimizar el centrado de elementos multimedia 
+   mediante el modelo de caja, diseñar efectos visuales de resplandor neón (text-shadow y box-shadow) 
+   y expandir la paleta cromática según la estética de la película Zoolander.
+*/
+
+/* --- Configuración Global --- */
+body {
+    background-color: #000000; /* Negro absoluto */
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif; /* Asegurate de que el nombre sea Montserrat */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Centrado de Bloques --- 
+   Aplicamos display: block y margin: auto a todo para asegurar el alineamiento central */
+h1, h2, h3, h4, p, img, iframe, nav, footer, ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* --- Títulos Neón --- */
+h1 {
+    color: #ff0000; /* Rojo */
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.6); 
+    text-transform: uppercase;
+    font-size: 3.5em;
+    padding: 30px 0;
+    margin: 0;
+}
+
+h2 {
+    color: #ffff00; /* Amarillo */
+    text-shadow: 0 0 8px #ffff00;
+    border-bottom: 2px solid #ffff00;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #00ff00; /* Verde */
+    text-shadow: 0 0 5px #00ff00;
+    margin-top: 30px;
+}
+
+h4 {
+    color: #00d2ff; /* Celeste Blue Steel */
+    text-shadow: 0 0 5px #00d2ff;
+}
+
+/* --- Navegación --- */
+nav {
+    background-color: #111;
+    padding: 20px 0;
+    border-bottom: 3px solid #ff0080; /* Línea fucsia de pasarela */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s; /* Suaviza el efecto hover */
+}
+
+nav a:hover {
+    color: #ff0080; /* Fucsia Neón */
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+    transform: scale(1.1);
+}
+
+/* --- Imágenes e Iframes (Embebidos) --- */
+iframe {
+    border: 4px solid #333;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 90%; /* Responsivo */
+    transition: 0.5s;
+}
+img{
+    border: 4px solid #333;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* Ancho unificado basado en zoolander2.jpg */
+    width: 600px; 
+    max-width: 95%; /* Evita que se rompa en pantallas chicas */
+    height: auto;   /* Mantiene la proporción original */
+    transition: 0.5s;
+}
+
+img:hover {
+    box-shadow: 0 0 30px #00d2ff; /* Brillo celeste al pasar el mouse */
+}
+
+/* --- Párrafos y Contenedores --- */
+p {
+    max-width: 800px; /* Limita el ancho para que no sea difícil de leer */
+    padding: 10px 25px;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #050505;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    color: #666;
+}
+
+address {
+    font-style: normal;
+    letter-spacing: 2px;
+}

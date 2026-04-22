@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: monserrat;
+    line-height: 1.6; /*Mejora la legibilidad*/
+    }
+
+h1 {
+    color: #ff0000;      /* Rojo vibrante [cite: 933] */
+    text-align: center;  /* Centrado para el título principal [cite: 936] */
+    text-transform: uppercase; /* Todo en mayúsculas para más impacto */
+    font-size: 3em;      /* Tamaño grande [cite: 948] */
+}
+
+h2{
+    color: #ffff00;
+    border-bottom: 2px solid #ffff00; /* Subrayado estético para secciones */
+}
+
+h3{
+    color: #00ff00;
+}
+
+h4{
+    color: #00d2ff;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ff0080; /* Un fucsia cuando pasas el mouse para dar feedback */
+}
+    
