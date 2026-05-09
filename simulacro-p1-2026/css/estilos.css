@@ -1,0 +1,99 @@
+/* 1. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Cuerpo y Fondo */
+body {
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 3. Layout Flexbox */
+.layout-principal {
+    display: flex; /* Clase 04: Alineación horizontal */
+    width: 100%;   /* Porcentaje */
+    min-height: 100vh; 
+}
+
+/* 4. Menú Lateral (Header) */
+header {
+    width: 25%; /* Porcentaje */
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem; /* rem */
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+/* 5. Navegación */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ced1;
+    text-decoration: underline;
+}
+
+/* 6. Contenedor de Contenido (Ajustado para ocupar el resto) */
+.contenedor-principal {
+    /* Único uso de PX permitido por la consigna para el ancho máximo */
+    max-width: 1000px; 
+    flex-grow: 1; /* Ocupa el resto del 75% disponible */
+    padding: 4rem; 
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 7. Imágenes y Video */
+img {
+    max-width: 100%; /* Porcentaje */
+    height: auto;
+    margin: 1.5rem 0;
+}
+
+.video-contenedor {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto en % */
+    height: 0;
+    width: 100%;
+}
+
+.video-contenedor iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 8. Pie de Página */
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
