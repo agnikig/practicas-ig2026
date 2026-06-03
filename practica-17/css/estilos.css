@@ -1,0 +1,45 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    color: #e63946; /* Color llamativo tipo Hot Sale */
+    margin-bottom: 10px;
+}
+
+/* Tarjeta contenedora de información */
+.tarjeta-producto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #e63946;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1d3557;
+}
+
+.aviso {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
