@@ -1,0 +1,77 @@
+/* Estilos generales de la página y el fondo */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f4f8; /* Color de fondo suave (azul grisáceo muy claro) */
+    color: #2b3a4a; /* Color de fuente general oscuro para buena lectura */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal para centrar y limitar el ancho de la página */
+.contenedor {
+    background-color: #ffffff; /* Fondo blanco para destacar el contenido */
+    max-width: 650px;
+    margin: 40px 20px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo para el Título (h1) */
+h1 {
+    color: #1a4f7a; /* Color azul profundo */
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el Subtítulo (h2) */
+h2 {
+    color: #4a7c59; /* Color verde opaco complementario */
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Estilos para h3 secundario */
+h3 {
+    color: #1a4f7a;
+    font-size: 1.1em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos (p) */
+p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Control y estilo de la imagen */
+.imagen-destacada {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 15px 0;
+    display: block;
+}
+
+/* Estilos de la lista sin orden (ul / li) */
+.lista-conceptos {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.lista-conceptos li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #3d4f61;
+}

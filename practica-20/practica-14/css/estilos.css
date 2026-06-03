@@ -1,0 +1,89 @@
+/* Identidad Industrial/Ferroviaria */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d0a0a; /* Granate más oscuro/industrial */
+    color: #e0e0e0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 50px 100px;
+    line-height: 1.6;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Firuletes: Borde decorativo gris plata */
+    border: 4px double #c0c0c0; 
+    background-color: #4a0d0d;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #c0c0c0; /* Línea divisoria de acero */
+    padding-bottom: 15px;
+}
+
+/* Menú de Navegación Horizontal */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a:link, a:visited {
+    color: #c0c0c0; /* Gris plata */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; /* Estilo de cartelería ferroviaria */
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Decoración para títulos (Firuletes industriales) */
+h2::before, h2::after {
+    content: " — ";
+    color: #c0c0c0;
+}
+
+/* Multimedia escalable */
+img, video, iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #c0c0c0; /* Marco metálico */
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #c0c0c0;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+}
+
+/* Declaración de uso de IA (Práctica 14) */
+/* Este código CSS fue generado con asistencia de IA para 
+   aplicar una identidad visual industrial/ferroviaria, 
+   definiendo bordes dobles y esquemas de color específicos. */

@@ -1,0 +1,44 @@
+/* Fondo y color de texto general */
+body {
+    background-color: #5d1111; /* Granate */
+    color: #ffffff;            /* Blanco */
+}
+
+/* Estilos de los links y hover*/
+a:link, a:visited {
+    color: #c0c0c0;            /* Gris plata */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0c0c0;            /* Gris plata */
+    text-decoration: underline; 
+}
+
+body {
+    font-family: Helvetica;
+}
+
+#contenedor {
+    width: 100%;           /* Ocupa todo el ancho en pantallas chicas */
+    max-width: 960px;      /* Límite de ancho para pantallas grandes */
+    margin: 0 auto;        /* Lo centra horizontalmente */
+}
+
+img, video {
+    width: 50%;           /* Ocupan el 50% del ancho de su contenedor */
+    height: auto;          /* Mantienen su proporción original */
+    display: block;
+}
+
+body {
+    margin: 50px 100px;
+}
+
+header {
+    margin-bottom: 30px; /* Separa el encabezado del contenido de abajo */
+}
+
+footer {
+    margin-top: 30px;    /* Separa el pie de página del contenido de arriba */
+}
