@@ -1,0 +1,27 @@
+/* Estilos generales (fondo claro y texto oscuro por defecto) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#instrucciones-cafe {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+/* Clase para el Dark Mode. 
+  Desde JavaScript vas a tener que agregarle esta clase al elemento #instrucciones-cafe
+  si el usuario elige leerlo en modo oscuro.
+*/
+.modo-oscuro {
+    background-color: #222222 !important;
+    color: #eeeeee !important;
+    border-color: #444444 !important;
+}
