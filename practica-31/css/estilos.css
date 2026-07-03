@@ -1,0 +1,71 @@
+/* Selector universal para aplicar border-box a todo el sitio */
+/* Visto en: Clase 04 - CSS parte 2 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Color de fondo suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Contenedor principal que agrupa todo el examen */
+.contenedor {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b; /* Color verde oscuro para títulos */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Botón de inicio */
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Caja donde se imprimirán los resultados finales */
+#resultados {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e0f2f1;
+    border-left: 5px solid #00796b;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #263238;
+}
+
+/* Estilo para los textos importantes dentro de los resultados */
+strong {
+    color: #004d40;
+}

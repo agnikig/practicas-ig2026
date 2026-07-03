@@ -1,0 +1,7 @@
+.coincide {
+    border: 5px solid gold; /* Esto resalta el dado que coincide con la apuesta */
+}
+#contenedor-dados img {
+    width: 80px;
+    margin: 10px;
+}

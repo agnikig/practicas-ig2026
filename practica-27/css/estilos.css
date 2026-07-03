@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea; /* Un color tipo papel */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caja principal */
+.contenedor {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #8b4513; /* Marrón tipo cuero/libro */
+    font-size: 24px;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #5c2e0b;
+}
+
+/* Caja donde se muestran los resultados */
+#resultados {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+}
