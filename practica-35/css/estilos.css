@@ -1,0 +1,96 @@
+/* Identidad Industrial/Ferroviaria */
+* {
+    box-sizing: border-box;
+}
+
+/* Modificamos el body para que sea un contenedor flex vertical */
+body {
+    background-color: #3d0a0a;
+    color: #e0e0e0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0; /* Quitamos el margen fijo para que ocupe todo */
+    min-height: 100vh; /* Altura mínima: el 100% de la ventana */
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+    border: 4px double #c0c0c0;
+    background-color: #4a0d0d;
+    
+    /* Nueva estructura Flexbox para el contenedor interno */
+    display: flex;
+    flex-direction: column; /* Apila Header, Main y Footer verticalmente */
+}
+
+/* Hacemos que el main ocupe el espacio flexible sobrante */
+main {
+    flex: 1; /* Esto empuja al footer hacia abajo */
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #c0c0c0; /* Línea divisoria de acero */
+    padding-bottom: 15px;
+}
+
+/* Menú de Navegación Horizontal */
+nav ul {
+    display: flex;          /* Convertimos la lista en un contenedor flex */
+    justify-content: center; /* Centra los links horizontalmente */
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;              /* Flexbox nos permite usar 'gap' en lugar de márgenes en cada li */
+}
+
+/* Eliminamos los márgenes individuales de los li si usamos gap */
+nav ul li {
+    display: block; 
+}
+
+a:link, a:visited {
+    color: #c0c0c0; /* Gris plata */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; /* Estilo de cartelería ferroviaria */
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Decoración para títulos (Firuletes industriales) */
+h2::before, h2::after {
+    content: " — ";
+    color: #c0c0c0;
+}
+
+/* Multimedia escalable */
+img, video, iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #c0c0c0; /* Marco metálico */
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 2px solid #c0c0c0;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+}
