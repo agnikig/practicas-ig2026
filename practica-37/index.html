@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elecciones Centro de Estudiantes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Elecciones Estudiantiles</h1>
+    
+    <!-- Zona 1: Ingreso de Legajo -->
+    <div id="caja-legajo" class="tarjeta">
+        <input type="number" id="legajo" placeholder="Ingrese su N° de Legajo">
+        <button type="button" id="btn-validar">Validar Legajo</button>
+    </div>
+
+    <!-- Zona 2: Botones de Votación (Inician deshabilitados) -->
+    <div id="caja-votacion" class="tarjeta">
+        <h2>Seleccione su candidato:</h2>
+        <button type="button" id="btn-c1" class="btn-voto" disabled>Votar a Candidato 1</button>
+        <button type="button" id="btn-c2" class="btn-voto" disabled>Votar a Candidato 2</button>
+        <button type="button" id="btn-c3" class="btn-voto" disabled>Votar a Candidato 3</button>
+    </div>
+
+    <!-- Zona 3: Resultados -->
+    <div id="resultados" class="tarjeta resultados">
+        Esperando votos...
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

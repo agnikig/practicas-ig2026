@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 40 - Shopping</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Registro de Compras (Shopping)</h1>
+
+    <!-- Momento 1: Ingreso de cada compra -->
+    <div class="tarjeta">
+        <h3>1. Cargar Ítem</h3>
+        <input type="text" id="item" placeholder="Nombre del ítem (Ej: Zapatillas)">
+        <input type="number" id="costo" placeholder="Costo en $">
+        
+        <select id="medio-pago">
+            <option value="efectivo">Efectivo</option>
+            <option value="debito">Débito</option>
+            <option value="credito">Crédito</option>
+        </select>
+        
+        <button type="button" id="btn-agregar">Agregar Compra</button>
+    </div>
+
+    <!-- Momento 3: Cálculos y Resultados -->
+    <div class="tarjeta">
+        <h3>2. Informes del Día</h3>
+        <button type="button" id="btn-calcular">Calcular Totales</button>
+        <div id="resultados" class="caja-resultados"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca - Práctica 36</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Registro de Libros Antiguos</h1>
+    
+    <form id="form-libros">
+        <input type="text" id="titulo" placeholder="Título del libro">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="number" id="anio" placeholder="Año de edición">
+        
+        <select id="prestamo">
+            <option value="no">Disponible</option>
+            <option value="si">En préstamo</option>
+        </select>
+        
+        <!-- Usamos type="button" para evitar que el formulario recargue la página por defecto -->
+        <button type="button" id="btn-guardar">Guardar y Calcular</button>
+    </form>
+
+    <!-- Acá vamos a mostrar los resultados con JS -->
+    <div id="resultados"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

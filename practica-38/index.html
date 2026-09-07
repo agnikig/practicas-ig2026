@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 38 - Equipamiento Audiovisual</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Gestión de Equipamiento Audiovisual</h1>
+
+    <!-- Momento 1: Ingreso de inventario -->
+    <div class="tarjeta">
+        <h3>1. Ingresar Equipamiento</h3>
+        <input type="text" id="desc-equipo" placeholder="Descripción (Ej: Proyector)">
+        <select id="estado-equipo">
+            <option value="no">Disponible</option>
+            <option value="si">Ya está prestado</option>
+        </select>
+        <button type="button" id="btn-agregar">Agregar al Inventario</button>
+    </div>
+
+    <!-- Momento 2: Registrar Préstamo -->
+    <div class="tarjeta">
+        <h3>2. Registrar Préstamo</h3>
+        <input type="text" id="nombre-prestar" placeholder="Nombre exacto del equipo">
+        <input type="number" id="dias-prestar" placeholder="Cantidad de días">
+        <button type="button" id="btn-prestar">Prestar Equipo</button>
+    </div>
+
+    <!-- Momento 3: Resultados -->
+    <div class="tarjeta">
+        <h3>3. Informes</h3>
+        <button type="button" id="btn-resultados">Calcular Resultados</button>
+        <div id="resultados" class="caja-resultados"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* 1. Reset básico y modelo de cajas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para que los bordes y paddings no rompan el ancho */
+}
+
+/* 2. Cuerpo de la página: Usamos Flexbox para centrar todo al medio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    
+    /* Flexbox para centrar contenido vertical y horizontalmente */
+    display: flex; 
+    flex-direction: column; /* Apila el título, el formulario y los resultados verticalmente */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima: el 100% de la ventana */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4a0d0d;
+}
+
+/* 3. Contenedor del formulario */
+form {
+    background-color: white;
+    width: 100%; /* Ocupa el 100% del espacio disponible... */
+    max-width: 400px; /* ...pero con un tope máximo en píxeles */
+    padding: 2rem; /* Uso de rem para espaciados interiores */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Flexbox interno para apilar los inputs */
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos uno abajo del otro */
+    gap: 15px; /* Flexbox nos permite usar 'gap' para separar los elementos sin usar margin */
+}
+
+/* 4. Estilos para los campos de entrada */
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* 5. Estilos para el botón */
+button {
+    background-color: #4a0d0d;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7a1515;
+}
+
+/* 6. Caja de resultados */
+#resultados {
+    margin-top: 20px;
+    padding: 1.5rem;
+    background-color: #e0e0e0;
+    border-left: 5px solid #4a0d0d;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    line-height: 1.6;
+}
